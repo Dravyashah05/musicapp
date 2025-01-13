@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.1s ease;
+    
+}
+
+body{
+    background: #8d9797;
+    transition: background-color 0.3s ease, color 0.1s ease;
+    }
+ 
+body.dark {
+    background-color: black;
+    color: #5C4E4E;
+}
+.mod {
+    float: right;
+}
+
+.mod .night img,
+.mod .day img {
+    width: 5.5vh;
+    cursor: pointer;
+}
+
+.mod .night img {
+    padding: 15px 10px
+}
+
+.mod .day img {
+    display: none;
+    padding: 15px 10px
+}
+.container{
+    width: 300px;
+    max-height: 600px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+.logo .img{
+    width: 30px;
+    margin: 15px 10px;
+}
+
+.logo{
+    display: inline;
+}
+
+.banner img{
+    width: 250px;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+}
+
+.merge{
+    
+}
+.song_info{
+    margin: 23px;
+    font-family: serif;
+    text-align: left;
+}
+
+.display_date{
+    font-size: 5px;
+    margin: 0px 2px;
+    color: #393939;
+}
+
+.display_title{
+    font-size: 20px;
+    margin: 0px 0px;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.display_artist_name{
+    font-size: 10px;
+    margin: 0px 0px;
+    overflow: hidden;
+    color: #393939;
+}
+
+.menu {
+    display: inline;
+}
+.menu img{
+    width: 15px;
+    padding: 3px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.loader{
+    width: 250px;
+    background: whitesmoke;
+    height: 5px;
+    border-radius:5px ;
+    display: block;
+    margin: auto;
+}
+
+.line{
+    width: 0%;
+    float: left;
+    background: #4d4d4d;
+    height: 5px;
+    border-radius:5px ;
+    display: block;
+    margin: auto;
+}
+
+.run-time{
+    font-family: serif;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline;
+}
+
+.time-duration{
+    margin: 0px 25px;
+}
+.end-time{
+    font-family: serif;
+    font-size: 12px;
+    font-weight: bold;
+    float: right;
+    margin: 3px 0px;
+}
+
+.controler{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.previous,.start-stop,.start-stop .play,.start-stop .pause,.next{
+    display: inline;
+    width:40px;
+}
+
+.previous img{
+    width: 40px;
+}
+
+.start-stop{
+    margin: 0px 20px;
+}
+
+.start-stop .play img{
+    width: 40px;
+}
+
+.start-stop .pause{
+    display: none;
+}
+
+.start-stop .pause img{
+    width: 40px;
+}
+
+
+.next img{
+    width: 40px;
+}
+
+.other-btn{
+    display: block;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.other-btn .link,.playlist,.download{
+    display: inline;
+}
+.other-btn .link img{
+    width: 30px;
+}
+
+.other-btn .download img{
+    width: 30px;
+}
+
+.other-btn .playlist img{
+    width: 30px;
+}
