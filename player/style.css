@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: 0;
     transition: background-color 0.3s ease, color 0.1s ease;
     
 }
@@ -21,7 +21,7 @@ body.dark {
 
 .mod .night img,
 .mod .day img {
-    width: 5.5vh;
+    width: 30px;
     cursor: pointer;
 }
 
@@ -35,7 +35,7 @@ body.dark {
 }
 .container{
     width: 300px;
-    max-height: 600px;
+    height: 600px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
@@ -66,6 +66,7 @@ body.dark {
     
 }
 .song_info{
+    width: 205px;
     margin: 23px;
     font-family: serif;
     text-align: left;
@@ -80,7 +81,7 @@ body.dark {
 .display_title{
     font-size: 20px;
     margin: 0px 0px;
-    overflow: hidden;
+    overflow: inherit;
     font-weight: bold;
 }
 
@@ -93,12 +94,14 @@ body.dark {
 
 .menu {
     display: inline;
+    width: 20px;
 }
 .menu img{
     width: 15px;
     padding: 3px;
     border-radius: 20px;
     border: 1px solid black;
+    float: right;
 }
 .loader{
     width: 250px;
@@ -184,7 +187,7 @@ body.dark {
     border-radius: 20px;
 }
 
-.other-btn .link,.playlist,.download{
+.other-btn .link,.playlist_icon,.download{
     display: inline;
 }
 .other-btn .link img{
@@ -195,6 +198,76 @@ body.dark {
     width: 30px;
 }
 
-.other-btn .playlist img{
+.other-btn .playlist_icon img{
     width: 30px;
+}
+
+.playlist{
+        width: 280px;
+        height: 250px;
+        flex-direction: column;
+        gap: 2px;
+        background-color: white;
+        border-radius: 20px;
+        padding: 10px;
+        display: flex;
+        background: rgba(236, 236, 236, .9);
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.scroll{
+    overflow: scroll;
+    margin: 2px;
+}
+  
+.playlist{
+    bottom: 0px;
+    
+}
+
+.playlist_title{
+    font-weight: bolder;
+    font-size: ;
+    text-align: center;
+    position: none;
+}
+
+.box{
+        width: 265px;
+        height: 50px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin: 5px 0px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+.playbtn img{
+    width: 10px;
+}
+
+.song_img img {
+        width: 50px;
+        height: 50px;
+        border-radius: 10%;
+        object-fit: cover;
+    }
+
+.info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+    }
+
+.info p{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.info .song_artist{
+    font-size: 10px;
 }

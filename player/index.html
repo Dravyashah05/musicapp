@@ -1,139 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Music | Player</title>
-    <link
-      rel="shortcut icon"
-      href="https://img.icons8.com/?size=100&id=EHtxO8ZmA602&format=png&color=000000"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=EHtxO8ZmA602&format=png&color=000000" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <section class="player">
-      <div class="container">
-        <div class="logo">
-          <img
-            src="https://img.icons8.com/?size=100&id=87050&format=png&color=000000"
-            alt=""
-            class="img"
-          />
-        </div>
+    <div class="container">
+        <div class="logo"><img src="https://img.icons8.com/?size=100&id=87050&format=png&color=000000" alt="" class="img"></div>
         <div class="mod">
-          <div class="night">
-            <img
-              src="https://img.icons8.com/?size=100&id=59841&format=png&color=000000"
-              alt=""
-            />
-          </div>
-          <div class="day">
-            <img
-              src="https://img.icons8.com/?size=100&id=60002&format=png&color=000000"
-              alt=""
-            />
-          </div>
+            <div class="night">
+                <img src="https://img.icons8.com/?size=100&id=59841&format=png&color=000000" alt="">
+            </div>
+            <div class="day">
+                <img src="https://img.icons8.com/?size=100&id=60002&format=png&color=000000" alt="">
+            </div>
         </div>
         <div class="banner">
-          <img
-            src=".//content/song/Please Please Please/banner/Please Please Please banner.jpeg"
-            alt=""
-          />
+            <img src="./content/exception/exception.jpeg" alt="" id="banner">
         </div>
         <section>
-          <div class="merge">
-            <table>
-              <tr>
-                <th>
-                  <div class="song_info">
-                    <p class="display_date">June 6, 2024</p>
-                    <p class="display_title">Please Please Please</p>
-                    <p class="display_artist_name">Sabrina Carpenter</p>
-                  </div>
-                </th>
-                <th>
-                  <div class="menu">
-                    <a href="#" class="menu"
-                      ><img
-                        src="https://img.icons8.com/?size=100&id=102729&format=png&color=000000"
-                        alt=""
-                    /></a>
-                  </div>
-                </th>
-              </tr>
-            </table>
-          </div>
-          <div class="loader">
-            <div class="line"></div>
-          </div>
-          <div class="time-duration">
-            <div class="run-time">
-              <span>00:00</span>
+            <div class="merge">
+                <table>
+                    <tr>
+                        <th>
+            <div class="song_info">
+                <p class="display_date" id="display_relese_date">month 0, 0000</p>
+                <p id="display_relese_date"></p>
+                <p class="display_title" id="title">Music Name</p>
+                <p class="display_artist_name" id="display_artist_name">Artist Name</p>
+                 </div>
+                 </th>
+                 <th>
+                 <div class="menu">
+                 <a href="#" class="menu"><img src="https://img.icons8.com/?size=100&id=102729&format=png&color=000000" alt=""></a>
+                 </div>
+                 </th>
+                 </tr>
+                 </table>
             </div>
-            <div class="end-time">
-              <span>00:00</span>
+            <div class="loader">
+                <div class="line">
+
+                </div>
             </div>
-            <div class="controler">
-              <div class="previous">
-                <img
-                  src="https://img.icons8.com/?size=100&id=407&format=png&color=000000"
-                  alt=""
-                />
-              </div>
-              <div class="start-stop" id="play-pause">
-                <span class="pause" id=""
-                  ><img
-                    src="https://img.icons8.com/?size=100&id=403&format=png&color=000000"
-                    alt=""
-                    style="width: 40px"
-                /></span>
-                <span class="play"
-                  ><img
-                    src="https://img.icons8.com/?size=100&id=398&format=png&color=000000"
-                    alt=""
-                    style="width: 40px"
-                /></span>
-              </div>
-              <div class="next">
-                <img
-                  src="https://img.icons8.com/?size=100&id=405&format=png&color=000000"
-                  alt=""
-                />
-              </div>
+            <div class="time-duration">
+                <div class="run-time">
+                    <span>00:00</span>
+                </div>
+                <div class="end-time">
+                    <span>00:00</span>
+                </div>
+                <div class="controler">
+                    <div class="previous" onclick="prevsong()">
+                        <img src="https://img.icons8.com/?size=100&id=407&format=png&color=000000" alt="">
+                    </div>
+                    <div class="start-stop" id="play-pause">
+                        <span class="pause" id=""><img src="https://img.icons8.com/?size=100&id=403&format=png&color=000000" alt="" style="width:40px;"></span>
+                        <span class="play" ><img src="https://img.icons8.com/?size=100&id=398&format=png&color=000000" alt="" style="width:40px;"></span>
+                    </div>
+                    <div class="next" onclick="nextsong()">
+                       <img src="https://img.icons8.com/?size=100&id=405&format=png&color=000000" alt=""> 
+                    </div>
+                </div>
+                <div class="other-btn">
+                    <div class="link"><img src="https://img.icons8.com/?size=100&id=92&format=png&color=000000" alt=""></div>
+                    <div class="download">
+                        <img src="https://img.icons8.com/?size=100&id=sXUnPq4XYR1D&format=png&color=000000" alt="">
+                    </div>
+                    <div class="playlist_icon"><img src="https://img.icons8.com/?size=100&id=24520&format=png&color=000000" alt=""></div>
+                </div>
             </div>
-            <div class="other-btn">
-              <div class="link">
-                <img
-                  src="https://img.icons8.com/?size=100&id=92&format=png&color=000000"
-                  alt=""
-                />
-              </div>
-              <div class="download">
-                <img
-                  src="https://img.icons8.com/?size=100&id=sXUnPq4XYR1D&format=png&color=000000"
-                  alt=""
-                />
-              </div>
-              <div class="playlist">
-                <img
-                  src="https://img.icons8.com/?size=100&id=24520&format=png&color=000000"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
         </section>
-      </div>
+            <section>
+        <div class="playlist">
+            <div class="playlist_title" onclick="closetab()">Playlist</div>
+            <div class="scroll">
+            <div class="box">
+                <div class="song_img">
+                    <img src=".//content/song/Please Please Please/banner/Please Please Please banner.jpeg" alt="">
+                </div>
+
+            <p style="text-align:center; font-size:15px; margin;5px;">No More Item's</p>
+        </div>
+        </div>
+    </section>
+    </div>
     </section>
     <div class="audio">
-      <audio id="music">
-        <source
-          src="./content/song/Please Please Please/music/Sabrina Carpenter - Please Please Please .mp3"
-          type="audio/mpeg"
-        />
-      </audio>
+        <audio id="music">            
+        </audio>
     </div>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
